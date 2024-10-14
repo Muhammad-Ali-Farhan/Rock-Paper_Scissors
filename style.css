@@ -25,8 +25,8 @@ body {
 
 
 .js-status {
-    display: inline-block; /* Make it an inline block */
-    text-align: center; /* Center text */
+    display: inline-block; 
+    text-align: center; 
     font-size: 30px;
     font-family: 'Arial', Helvetica, sans-serif;
     font-weight: bold;
@@ -101,9 +101,9 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 250px); /* Create three equal columns */
-    justify-content: center; /* Center the grid items within the container */
-    gap: 100px; /* Add some space between the grid items */
+    grid-template-columns: repeat(3, 250px); 
+    justify-content: center; 
+    gap: 100px; 
     margin-top: 50px;
 }
 
