@@ -1,0 +1,190 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+
+.main {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(45deg, #d9d9d9, #f0f0f0, #ffffff, #e6e6e6);
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px;
+    margin-top: 50px;
+    letter-spacing: 3px;
+    transition: transform 0.2s ease;
+}
+
+.main:hover {
+    transform: scale(1.02);
+}
+
+
+.js-status {
+    display: inline-block; /* Make it an inline block */
+    text-align: center; /* Center text */
+    font-size: 30px;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(45deg, #d9d9d9, #f0f0f0, #ffffff, #e6e6e6);
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    letter-spacing: 3px;
+    transition: transform 0.2s ease;
+    margin-left: 100px;
+}
+
+.js-moves, .js-moves1 {
+    display: inline-block; 
+    text-align: center; 
+    font-size: 30px;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(45deg, #d9d9d9, #f0f0f0, #ffffff, #e6e6e6);
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; 
+    margin-top: 50px;
+    letter-spacing: 3px;
+    transition: transform 0.2s ease;
+}
+
+.js-scores {
+    text-align: center; 
+    font-size: 30px;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(45deg, #d9d9d9, #f0f0f0, #ffffff, #e6e6e6);
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    letter-spacing: 3px;
+    transition: transform 0.2s ease;
+}
+
+
+.status-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 30px; 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both; 
+    display: table;
+}
+
+.move1{
+    height: 110px;
+    width: 88px;
+    
+}
+
+.move2{
+    height: 110px;
+    width: 88px;
+}
+
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 250px); /* Create three equal columns */
+    justify-content: center; /* Center the grid items within the container */
+    gap: 100px; /* Add some space between the grid items */
+    margin-top: 50px;
+}
+
+.rockog {
+    background-color: black;
+    border-radius: 250px;
+    padding: 0;
+    border-color: rgb(183, 183, 183);
+    border-width: 3px;
+    border-style: solid;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 40px 20px rgba(255, 255, 255, 0.5);
+    
+}
+.rock {
+    width: 150px;
+    height: 160px;
+}
+
+.paperog {
+    background-color: black;
+    border-radius: 250px;
+    padding: 0;
+    border-color: rgb(183, 183, 183);
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 0px 0px 40px 20px rgba(255, 255, 255, 0.5);
+}
+.paper {
+    width: 150px;
+    height: 160px;
+}
+
+.scissorsog {
+    background-color: black;
+    border-radius: 250px;
+    padding: 0;
+    border-color: rgb(183, 183, 183);
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 0px 0px 40px 20px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.scissors {
+    width: 150px;
+    height: 160px;
+}
+
+.rockog:hover, .paperog:hover, .scissorsog:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.5);
+}
+
+.rockog:active, .paperog:active, .scissorsog:active {
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.reset {
+    display: block; 
+    font-weight: bold;
+    margin: 20px auto; 
+    margin-top: 50px;
+    padding: 10px 20px; 
+    font-size: 20px; 
+    font-family: 'Arial', Helvetica, sans-serif; 
+    color: white; 
+    border-color: rgb(163, 163, 163);
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0px 0px 40px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.reset:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transform: scale(0.95);
+}
